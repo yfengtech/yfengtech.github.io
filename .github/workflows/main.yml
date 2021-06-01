@@ -27,5 +27,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/main'
         with:
-          github_token: ${{secrets.Public key of ACTIONS_DEPLOY_KEY}}
+          github_token: ${{secrets.ACTIONS_DEPLOY_KEY}}
           publish_dir: ./docs
