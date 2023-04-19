@@ -28,11 +28,11 @@ jobs:
 
       - name: Get trophies
         run: |
-          file_path=$(find . -name "getTrophies.js" -print)
+          # file_path=$(find . -name "getTrophies.js" -print)
           # 打印文件路径
-          echo "File path: $file_path"
+          # echo "File path: $file_path"
 
-          node "$file_path"
+          node ./script/getTrophies.js
           # data=$(node scripts/getTrophies.js)
           #  > trophies.json
           # echo $data 
