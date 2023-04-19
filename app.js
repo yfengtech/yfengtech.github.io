@@ -1,7 +1,3 @@
-const API_URL = 'https://api.playstation.com/userProfile/v1/users/{user_id}/trophies?fields=trophyTitleSmallIconUrl,trophyRare,trophyEarnedRate,fromUser&platform=PS4,PS5&npLanguage=en';
-
-const USER_ID = 'showery-mode68';
-
 const TROPHY_CONTAINER = document.getElementById('trophy-container');
 
 function getTrophies() {
@@ -28,4 +24,4 @@ function getTrophies() {
     .catch(error => console.error(error));
 }
 
-getTrophies();
+// getTrophies();
