@@ -28,18 +28,10 @@ jobs:
 
       - name: Get trophies
         run: |
-          # file_path=$(find . -name "getTrophies.js" -print)
-          # 打印文件路径
-          # echo "File path: $file_path"
-
-          node ./script/getTrophies.js
-          # data=$(node scripts/getTrophies.js)
-          #  > trophies.json
-          # echo $data 
-
+          data=$(node ./script/getTrophies.js)
+          echo $data  > trophies.json
 
       - name: Commit and push changes
-        if: false
         run: |
           git config --global user.name ${{ secrets.GITHUB_USER_NAME }}
           git config --global user.email ${{ secrets.GITHUB_USER_EMAIL }}
