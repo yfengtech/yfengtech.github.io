@@ -29,9 +29,9 @@ jobs:
       - name: Get trophies
         run: |
           node scripts/getTrophies.js
-          data=$(node scripts/getTrophies.js)
+          # data=$(node scripts/getTrophies.js)
           #  > trophies.json
-          echo $data 
+          # echo $data 
 
 
       - name: Commit and push changes
