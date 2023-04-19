@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  header {
+    background-color: #005b9f;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  main {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .trophy {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: calc(20% - 20px);
+    text-align: center;
+  }
+  
+  .trophy img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .trophy h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  
+  .trophy p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
