@@ -28,6 +28,7 @@ jobs:
 
       - name: Get trophies
         run: |
+          node scripts/getTrophies.js
           data=$(node scripts/getTrophies.js)
           #  > trophies.json
           echo $data 
