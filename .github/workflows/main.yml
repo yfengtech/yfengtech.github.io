@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: '0 */12 * * *' # 每隔12个小时执行一次
+    - cron: '0 15 * * *' # UTC 3pm every day
 
 jobs:
   deploy:
@@ -28,15 +28,8 @@ jobs:
       - name: Get trophies
         run: |
           data=$(node ./script/getTrophies.js)
+          echo $data
           echo $data  > ./public/trophies.json
-      - name: Commit and push changes
-        if: false
-        run: |
-          git config --global user.name ${{ secrets.GH_USER_NAME }}
-          git config --global user.email ${{ secrets.GH_USER_EMAIL }}
-          git add .
-          git commit -m "Update trophies"
-          git push
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
