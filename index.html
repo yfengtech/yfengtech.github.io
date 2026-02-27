@@ -1,18 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>PlayStation 奖杯追踪器</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anthony Song | Personal Website</title>
+  <meta name="description" content="Anthony Song's personal website showcasing Android engineering, CI/CD, and software development experience.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>PlayStation 奖杯追踪器</h1>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top">Anthony Song</a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menu-btn" aria-label="Open menu" aria-expanded="false">Menu</button>
   </header>
-  <main>
-    <div id="trophy-container"></div>
+
+  <main id="top">
+    <section class="hero section reveal">
+      <p class="eyebrow">Personal Website</p>
+      <h1>Building scalable mobile products and reliable engineering workflows.</h1>
+      <p class="hero-copy">
+        I'm Anthony Song, a Senior Software Engineer focused on Android development, CI/CD automation, and high-performance application architecture.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#projects">View Projects</a>
+        <a class="btn ghost" href="#contact">Contact Me</a>
+      </div>
+    </section>
+
+    <section class="section reveal" id="about">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <p>
+          With 10 years of software development experience, I specialize in designing scalable and maintainable Android app architecture from 0 to 1. I work deeply with Kotlin, Android frameworks, and engineering best practices to build fast, stable applications.
+        </p>
+        <ul class="facts">
+          <li><span>Title</span><strong>Senior Software Engineer</strong></li>
+          <li><span>Focus</span><strong>Android + CI/CD</strong></li>
+          <li><span>Location</span><strong>Beijing, China</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section reveal" id="projects">
+      <div class="section-head">
+        <h2>Core Expertise</h2>
+        <p>Key areas I focus on in product development and engineering execution.</p>
+      </div>
+      <div class="project-grid">
+        <article class="card">
+          <h3>Android Architecture</h3>
+          <p>Designing scalable, maintainable Android app structures and shipping robust mobile features from 0 to 1.</p>
+          <a href="https://www.linkedin.com/in/anthony-song-tech/" target="_blank" rel="noreferrer" aria-label="View Anthony Song on LinkedIn">Details</a>
+        </article>
+        <article class="card">
+          <h3>CI/CD Automation</h3>
+          <p>Implementing GitHub-based pipelines to improve delivery speed, release quality, and team productivity.</p>
+          <a href="https://www.linkedin.com/in/anthony-song-tech/" target="_blank" rel="noreferrer" aria-label="View Anthony Song on LinkedIn">Details</a>
+        </article>
+        <article class="card accent">
+          <h3>Continuous Learning</h3>
+          <p>Exploring modern tooling, AI-assisted workflows, and Python scripting to continuously optimize development processes.</p>
+          <a href="https://www.linkedin.com/in/anthony-song-tech/" target="_blank" rel="noreferrer" aria-label="View Anthony Song on LinkedIn">Details</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section reveal" id="contact">
+      <h2>Contact</h2>
+      <p>If you'd like to collaborate, connect, or just say hello, feel free to reach out below.</p>
+      <div class="contact-links">
+        <a class="btn ghost" href="mailto:hello@example.com">Email</a>
+        <a class="btn ghost" href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/anthony-song-tech/" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Anthony Song. Built for GitHub Pages.</p>
+  </footer>
+
   <script src="app.js"></script>
 </body>
 </html>
