@@ -1,7 +1,4 @@
 {
-  "name": "psn-project",
-  "version": "1.0.0",
-  "dependencies": {
-    "psn-api": "^2.9.0"
-  }
+  "name": "personal-website",
+  "version": "1.0.0"
 }
